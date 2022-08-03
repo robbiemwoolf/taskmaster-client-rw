@@ -3,7 +3,7 @@ import Line from "../utils/hr/Line"
 import Archived from "../utils/archived/Archived"
 
 export default function Dailies() {
-    const title = 'daily smashed'
+    const title = 'Daily Smashed'
     const path = '/daily'
     
     return (

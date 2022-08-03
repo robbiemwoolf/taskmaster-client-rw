@@ -16,7 +16,7 @@ function App() {
           <Route exact path='/'>
             <Brutal />
           </Route>
-          <Route path='/dailies'>
+          <Route path='/daily'>
             <Dailies />
           </Route>
           <Route path='/longterm'>

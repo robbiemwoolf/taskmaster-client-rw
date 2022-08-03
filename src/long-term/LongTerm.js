@@ -3,7 +3,7 @@ import Line from "../utils/hr/Line"
 import Archived from "../utils/archived/Archived"
 
 export default function LongTerm() {
-    const title = 'long term smashed'
+    const title = 'Long Term Smashed'
     const path = '/longterm'
 
     return (

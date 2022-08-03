@@ -1,6 +1,5 @@
 import { useEffect, useState } from 'react'
 import '../../App.css'
-//import TaskLayout from '../tasklist/TaskLayout'
 const url = process.env.REACT_APP_API_BASE_URL
 
 export default function Archived({path, title}) {

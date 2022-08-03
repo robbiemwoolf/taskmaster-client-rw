@@ -3,12 +3,14 @@ import '../../App.css'
 import PopUp from "./PopUp"
 import TaskLayout from "./TaskLayout"
 
+const url = process.env.REACT_APP_API_BASE_URL
+
 export default function Tasklist({path}) {
     const [tasks, setTasks] = useState([])
     const [modalShow, setModalShow] = useState(false)
 
     useEffect(() => {
-        fetch(`https://taskmaster-backend-rw.herokuapp.com/${path}`)
+        fetch(`${url}${path}`)
             .then((response) => response.json())
             .then((results) => {
                 const arrData = Object.values(results)

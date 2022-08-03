@@ -1,13 +1,13 @@
 import { useEffect, useState } from 'react'
 import '../../App.css'
 //import TaskLayout from '../tasklist/TaskLayout'
-//const url = process.env.DATABASE_URL
+const url = process.env.REACT_APP_API_BASE_URL
 
 export default function Archived({path, title}) {
     const [data, setData] = useState([])
     
     useEffect(() => {
-        fetch(`https://taskmaster-backend-rw.herokuapp.com/${path}/archived`)
+        fetch(`${url}${path}/archived`)
             .then((response) => response.json())
             .then((results) => {
                 const arrData = Object.values(results)

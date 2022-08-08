@@ -24,9 +24,9 @@ export default function Tasklist({path}) {
             })
     }, [path])
 
-    const tasklist = tasks.map((task) => {
+    const tasklist = tasks.map((task, index) => {
         return (
-        <TaskLayout task={task}/>
+        <TaskLayout key={index} task={task}/>
         )
     })
 
@@ -40,6 +40,7 @@ export default function Tasklist({path}) {
                 </div>
 
                 <PopUp
+                    path={path}
                     show={modalShow}
                     tasks={tasks}
                     setTasks={setTasks}
